@@ -52,7 +52,6 @@ class ParseCurrency extends Command
                     'q' => 1
                 ])->json();
             }
-            print 'I\'m here';
             CurrencyHistoryJob::dispatch($data);
 //            return $data;
         }catch (Exception $e) {
