@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('test', [\App\Http\Controllers\CurrencyController::class, 'getHistory']);
+Route::get('history', [\App\Http\Controllers\CurrencyController::class, 'getHistory']);
